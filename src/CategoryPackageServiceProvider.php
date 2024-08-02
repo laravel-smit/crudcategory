@@ -1,6 +1,6 @@
 <?php
 
-namespace laravelsmit\crudcategory;
+namespace Laravelsmit\CrudCategory;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -23,6 +23,13 @@ class CategoryPackageServiceProvider extends ServiceProvider {
         $this->publishes([
             __DIR__ . '/../config/categorypackage.php' => config_path('categorypackage.php'),
                 ], 'config');
+
+        // Publish other resources
+        $this->publishes([
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/categorypackage'),
+            __DIR__ . '/../routes/web.php' => base_path('routes/categorypackage.php'),
+            __DIR__ . '/../app/Http/Controllers' => app_path('Http/Controllers/CategoryPackage'),
+                ], 'categorypackage-resources');
     }
 
     public function register() {
