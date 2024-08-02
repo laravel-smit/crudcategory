@@ -1,0 +1,27 @@
+{
+    "name": "laravelsmit/crudcategory",
+    "description": "Overview",
+    "authors": [
+        {
+            "name": "Smit Desai",
+            "email": "smit.laravel@gmail.com"
+        }
+    ],
+    "require": {
+        "laravelsmit/crudcategory": "dev-main"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "laravelsmit\\crudcategory\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "laravelsmit\\crudcategory\\CategoryPackageServiceProvider"
+            ]
+        }
+    }
+}
