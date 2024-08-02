@@ -22,7 +22,7 @@ class CategoryPackageServiceProvider extends ServiceProvider {
         // Publish config
         $this->publishes([
             __DIR__ . '/../config/categorypackage.php' => config_path('categorypackage.php'),
-        ]);
+                ], 'config');
     }
 
     public function register() {
