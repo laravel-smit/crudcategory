@@ -1,8 +1,8 @@
 <?php
 
-namespace laravelsmit\crudcategory\Http\Controllers;
+namespace Laravelsmit\CrudCategory\Http\Controllers;
 
-use laravelsmit\crudcategory\Models\Category;
+use Laravelsmit\CrudCategory\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 

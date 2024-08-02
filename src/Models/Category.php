@@ -1,6 +1,6 @@
 <?php
 
-namespace laravelsmit\crudcategory\Models;
+namespace Laravelsmit\CrudCategory\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
