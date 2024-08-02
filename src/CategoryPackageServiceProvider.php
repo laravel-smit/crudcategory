@@ -27,9 +27,13 @@ class CategoryPackageServiceProvider extends ServiceProvider {
 
     public function register() {
         // Merge config
-        $this->mergeConfigFrom(
-                __DIR__ . '/../config/categorypackage.php', 'categorypackage'
-        );
+        try {
+            $this->mergeConfigFrom(
+                    __DIR__ . '/../config/categorypackage.php', 'categorypackage'
+            );
+        } catch (\Exception $e) {
+            \Log::error("Could not load configuration file: " . $e->getMessage());
+        }
     }
 
 }
