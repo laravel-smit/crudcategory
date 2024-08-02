@@ -28,7 +28,8 @@ class CategoryPackageServiceProvider extends ServiceProvider {
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/categorypackage'),
             __DIR__ . '/../routes/web.php' => base_path('routes/categorypackage.php'),
-            __DIR__ . '/../Http/Controllers' => app_path('Http/Controllers/CategoryController'),
+            __DIR__ . '/../Http/Controllers' => app_path('Http/Controllers/CategoryPackage'),
+            __DIR__ . '/../Models/Category.php' => app_path('Models/Category.php'),
                 ], 'categorypackage-resources');
     }
 
